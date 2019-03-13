@@ -25,3 +25,8 @@ server.emit('request', {from: "Еще клиент"});
 
 server.emit('error'); // throw TypeError
 server.emit('error', new Error("Серверная ошибка"));
+
+// получить обработчики
+// emitter.listeners(event)
+// количество обработчиков
+// EventEmitter.listenerCount(emitter, event)
